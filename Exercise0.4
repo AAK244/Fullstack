@@ -1,0 +1,38 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate server
+    Note right of browser: User fills out the form and clicks the Save button
+    server-->>browser: HTTP 302 Redirect
+    deactivate server
+
+    Note right of browser: The server redirects to /notes after the user adds a new note
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    activate server
+    server-->>browser: HTML document
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    activate server
+    server-->>browser: the css file
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    activate server
+    server-->>browser: the JavaScript file
+    deactivate server
+
+    Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    activate server
+    server-->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
+    deactivate server
+
+    Note right of browser: The browser executes the callback function that renders the notes, including the new note
+
+
+This diagram shows the events and interactions that occur when the user creates a new note. First, the user submits the note and the server returns an HTTP 302 response in which the user is redirected to the /notes page. The browser then reloads the /notes page and retrieves the necessary resources (HTML, CSS, JavaScript). Finally, the browser retrieves the JSON data containing the new note from the server and renders the note.
