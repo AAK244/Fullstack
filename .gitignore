@@ -1,0 +1,126 @@
+Exercise1.1/node_modules/
+Exercise1.2/node_modules/
+Exercise1.3/node_modules/
+Exercise1.4/node_modules/
+Exercise1.5/node_modules/
+Exercise1.6/node_modules/
+Exercise1.7/node_modules/
+Exercise1.8/node_modules/
+Exercise1.9/node_modules/
+Exercise1.10/node_modules/
+Exercise1.11/node_modules/
+Exercise1.12/node_modules/
+Exercise1.13/node_modules/
+Exercise1.14/node_modules/
+
+# Ignore specific configuration files
+Exercise1.2/vite.config.js
+Exercise1.3/vite.config.js
+Exercise1.4/vite.config.js
+Exercise1.5/vite.config.js
+Exercise1.6/vite.config.js
+Exercise1.7/vite.config.js
+Exercise1.8/vite.config.js
+Exercise1.9/vite.config.js
+Exercise1.10/vite.config.js
+Exercise1.11/vite.config.js
+Exercise1.12/vite.config.js
+Exercise1.13/vite.config.js
+Exercise1.14/vite.config.js
+
+# Ignore lock and package files in both directories
+Exercise1.1/package-lock.json
+Exercise1.2/package-lock.json
+Exercise1.2/package.json
+Exercise1.3/package-lock.json
+Exercise1.3/package.json
+Exercise1.4/package-lock.json
+Exercise1.4/package.json
+Exercise1.5/package-lock.json
+Exercise1.5/package.json
+Exercise1.6/package-lock.json
+Exercise1.6/package.json
+Exercise1.7/package-lock.json
+Exercise1.7/package.json
+Exercise1.8/package-lock.json
+Exercise1.8/package.json
+Exercise1.9/package-lock.json
+Exercise1.9/package.json
+Exercise1.10/package-lock.json
+Exercise1.10/package.json
+Exercise1.11/package-lock.json
+Exercise1.11/package.json
+Exercise1.12/package-lock.json
+Exercise1.12/package.json
+Exercise1.13/package-lock.json
+Exercise1.13/package.json
+Exercise1.14/package-lock.json
+Exercise1.14/package.json
+
+# Ignore index.html file in both directories
+Exercise1.2/index.html
+Exercise1.3/index.html
+Exercise1.4/index.html
+Exercise1.5/index.html
+Exercise1.6/index.html
+Exercise1.7/index.html
+Exercise1.8/index.html
+Exercise1.9/index.html
+Exercise1.10/index.html
+Exercise1.11/index.html
+Exercise1.12/index.html
+Exercise1.13/index.html
+Exercise1.14/index.html
+
+
+# Ignore all JSX files in Exercise1.2/src except Content.jsx
+Exercise1.2/src/*.jsx
+!Exercise1.2/src/Content.jsx 
+
+# Ignore all JSX files in Exercise1.3/src except App.jsx and Content.jsx
+Exercise1.3/src/*.jsx
+!Exercise1.3/src/App.jsx
+!Exercise1.3/src/Content.jsx
+
+# Ignore all JSX files in Exercise1.4/src except App.jsx and Total.jsx
+Exercise1.4/src/*.jsx
+!Exercise1.4/src/App.jsx
+!Exercise1.4/src/Total.jsx
+
+# Ignore all JSX files in Exercise1.5/src except App.jsx
+Exercise1.5/src/*.jsx
+!Exercise1.5/src/App.jsx 
+
+# Ignore all JSX files in Exercise1.6/src except App.jsx
+Exercise1.6/src/*.jsx
+!Exercise1.6/src/App.jsx 
+
+# Ignore all JSX files in Exercise1.7/src except App.jsx
+Exercise1.7/src/*.jsx
+!Exercise1.7/src/App.jsx  
+
+# Ignore all JSX files in Exercise1.9/src except Statistics.jsx
+Exercise1.9/src/*.jsx
+!Exercise1.9/src/Statistics.jsx  
+
+# Ignore all JSX files in Exercise1.10/src except Statistics.jsx and StatisticLine.jsx
+Exercise1.10/src/*.jsx
+!Exercise1.10/src/Statistics.jsx
+!Exercise1.10/src/StatisticLine.jsx
+
+# Ignore all JSX files in Exercise1.11/src except Statistics.jsx and StatisticLine.jsx
+Exercise1.11/src/*.jsx
+!Exercise1.11/src/Statistics.jsx
+!Exercise1.11/src/StatisticLine.jsx 
+
+# Ignore all JSX files in Exercise1.12/src except App.jsx
+Exercise1.12/src/*.jsx
+!Exercise1.12/src/App.jsx 
+
+# Ignore all JSX files in Exercise1.13/src except App.jsx
+Exercise1.13/src/*.jsx
+!Exercise1.13/src/App.jsx 
+
+# Ignore all JSX files in Exercise1.14/src except App.jsx
+Exercise1.14/src/*.jsx
+!Exercise1.14/src/App.jsx 

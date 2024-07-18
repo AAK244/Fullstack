@@ -1,0 +1,1 @@
+Necessary changes were made in the Statistics component to display the "No feedback given" message instead of statistics when feedback is not given. Other components and file contents are the same as Exercise 1.8.

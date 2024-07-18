@@ -1,0 +1,1 @@
+The Statistics component displays statistics in a table, and each statistics row is represented by the StatisticLine component. Other file contents are the same as Exercise1.10

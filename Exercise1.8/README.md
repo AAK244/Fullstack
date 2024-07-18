@@ -1,0 +1,1 @@
+I created three components named Header, Button and Statistics. I extracted the display of statistics into its own Statistics component and defined each component within its own component. I left the app's state in the App component.
