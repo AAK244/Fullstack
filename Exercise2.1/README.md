@@ -1,0 +1,1 @@
+When we remove objects from the parts array in the App component or add a new object to this array, the application continues to run.
