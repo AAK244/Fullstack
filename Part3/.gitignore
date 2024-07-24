@@ -1,0 +1,8 @@
+# Ignore node_modules folders for all exercises
+Exercise*/node_modules/
+
+# Ignore package-lock.json files in all exercises
+Exercise*/package-lock.json
+
+# Ignore build folder in Exercise3.11
+Exercise3.11/build/

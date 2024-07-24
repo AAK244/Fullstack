@@ -1,0 +1,32 @@
+# Tüm kişileri listele
+GET http://localhost:3001/api/persons
+Accept: application/json
+
+###
+
+# Belirli bir kişiyi getir
+GET http://localhost:3001/api/persons/4
+Accept: application/json
+
+###
+
+# Belirli bir kişiyi sil
+DELETE http://localhost:3001/api/persons/673494
+Accept: application/json
+
+###
+
+# Silindikten sonra tüm kişileri listele
+GET http://localhost:3001/api/persons
+Accept: application/json
+
+###
+
+# Yeni bir telefon rehberi girişi ekle
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "New Person",
+  "number": "123-456789"
+}
