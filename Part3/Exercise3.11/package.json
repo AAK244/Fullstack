@@ -8,8 +8,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon server.js",
     "client": "react-scripts start",
-    "build": "react-scripts build",
-    "install-client": "cd client && npm install"
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +19,7 @@
     "morgan": "^1.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.0"
+    "react-scripts": "^5.0.0"
   },
   "proxy": "http://localhost:3001",
   "devDependencies": {
@@ -38,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": "20.x",
+    "npm": "7.x"
   }
 }
