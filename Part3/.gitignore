@@ -4,4 +4,4 @@ Exercise*/node_modules/
 # Ignore package-lock.json files in all exercises
 Exercise*/package-lock.json
 
-
+.env
