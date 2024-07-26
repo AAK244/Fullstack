@@ -19,7 +19,7 @@
     "morgan": "^1.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "^5.0.0"
+    "react-scripts": "^5.0.1"
   },
   "proxy": "http://localhost:3001",
   "devDependencies": {
@@ -40,6 +40,6 @@
   },
   "engines": {
     "node": "20.x",
-    "npm": "7.x"
+    "npm": "10.x"
   }
 }
