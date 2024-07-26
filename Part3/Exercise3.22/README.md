@@ -1,1 +1,0 @@
-REnder üzerinden internekte atılacak 
