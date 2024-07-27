@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
@@ -7,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 app.use(morgan('tiny'));
-app.use(express.static(path.join(__dirname, '../build'))); // Güncellenmiş yol
+app.use(express.static(path.join(__dirname, '../build')));
 
 app.get('/api/persons', (req, res, next) => {
   Person.find({})
@@ -82,7 +83,7 @@ app.get('/info', (req, res, next) => {
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../build', 'index.html')); // Güncellenmiş yol
+  res.sendFile(path.join(__dirname, '../build', 'index.html'));
 });
 
 const errorHandler = (error, req, res, next) => {
@@ -99,7 +100,7 @@ const errorHandler = (error, req, res, next) => {
 
 app.use(errorHandler);
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
