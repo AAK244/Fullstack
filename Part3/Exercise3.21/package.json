@@ -2,11 +2,11 @@
   "name": "fullstack",
   "version": "1.0.0",
   "description": "",
-  "main": "backend/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "npm run server",  
-    "server": "nodemon backend/server.js",
+    "start": "node server.js",
+    "dev": "npm run server",
+    "server": "nodemon server.js",
     "client": "react-scripts start",
     "build": "react-scripts build",
     "install-client": "cd client && npm install"
