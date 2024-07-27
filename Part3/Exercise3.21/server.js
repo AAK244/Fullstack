@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 app.use(morgan('tiny'));
-app.use(express.static(path.join(_dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/api/persons', (req, res, next) => {
   Person.find({})
