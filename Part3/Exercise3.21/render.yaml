@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: Fullstack3
+    env: node
+    buildCommand: 'npm install'
+    startCommand: 'npm run start'
+    rootDir: ./Part3/Exercise3.21
