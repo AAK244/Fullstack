@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: Fullstack3
-    env: node
-    buildCommand: 'npm install'
-    startCommand: 'npm run start'
-    rootDir: .
