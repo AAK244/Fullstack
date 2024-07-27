@@ -8,10 +8,7 @@ const dbname = process.env.MONGODB_DBNAME;
 
 const url = `mongodb+srv://${username}:${password}@${clusterUrl}/${dbname}?retryWrites=true&w=majority&appName=AAK`;
 
-mongoose.connect(url, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+mongoose.connect(url)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
