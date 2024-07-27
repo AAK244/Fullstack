@@ -59,7 +59,6 @@ app.post('/api/persons', (req, res) => {
   res.json(person);
 });
 
-// Statik dosyaları build klasöründen hizmet verin
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('*', (req, res) => {
