@@ -70,7 +70,7 @@ fs.access(buildPath, fs.constants.F_OK, (err) => {
   console.log(`${buildPath} ${err ? 'does not exist' : 'exists'}`);
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
