@@ -1,13 +1,13 @@
 ## Creating Users, Logging In, and Adding Blogs with REST API Using PowerShell ##
 
-**_Creating a user:**_
+**Creating a user:**
 
 - `$body = '{"username":"hellas", "name":"Arto Hellas", "password":"password"}'`
 - `$headers = @{"Content-Type"="application/json"}`
 - `$response = Invoke-RestMethod -Uri http://localhost:3003/api/users -Method Post -Headers $headers -Body $body`
 - `$response`
 
-**_User login and receive token:**_ 
+**User login and receive token:**
 
 - `$body = '{"username":"hellas", "password":"password"}'`
 - `$headers = @{"Content-Type"="application/json"}`
@@ -16,7 +16,7 @@
 - `$token = $response.token`
 - `$token`
 
-**_Adding a blog with token:**_
+**Adding a blog with token:**
 
 - `$headers = @{"Content-Type"="application/json"; "Authorization"="Bearer $token"}`
 - `$body = '{"title":"New Blog", "author":"New Author", "url":"http://newurl.com", "likes":10}'`
