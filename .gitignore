@@ -1,0 +1,7 @@
+# Ignore node_modules folders for all exercises
+Exercise*/node_modules/
+
+# Ignore package-lock.json files in all exercises
+Exercise*/package-lock.json
+
+requests.http
