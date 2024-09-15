@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Things I Don't Know as of 2018",
+      "author": "Dan Abramov",
+      "url": "https://overreacted.io/things-i-dont-know-as-of-2018/",
+      "likes": 10,
+      "user": {
+        "id": 1,
+        "name": "Matti Luukkainen",
+        "username": "mluukkai"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Microservices and the First Law of Distributed Objects",
+      "author": "Martin Fowler",
+      "url": "https://martinfowler.com/articles/microservices.html",
+      "likes": 6,
+      "user": {
+        "id": 2,
+        "name": "Robert C. Martin",
+        "username": "uncle_bob"
+      }
+    }
+  ]
+}

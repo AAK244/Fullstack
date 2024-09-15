@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "mluukkai",
+      "password": "password",
+      "name": "Matti Luukkainen",
+      "blogs": [
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "username": "uncle_bob",
+      "password": "password1",
+      "name": "Robert C. Martin",
+      "blogs": [
+        2
+      ]
+    },
+    {
+      "id": 3,
+      "username": "gökhan",
+      "password": "123",
+      "name": "Abdullah AK",
+      "blogs": [
+        3,
+        4
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Things I Don't Know as of 2018",
+      "author": "Dan Abramov",
+      "url": "https://overreacted.io/things-i-dont-know-as-of-2018/",
+      "id": 1,
+      "userId": 1,
+      "likes": 5,
+      "comments": []
+    },
+    {
+      "title": "Microservices and the First Law of Distributed Objects",
+      "author": "Martin Fowler",
+      "url": "https://martinfowler.com/articles/microservices.html",
+      "id": 2,
+      "userId": 2,
+      "likes": 3,
+      "comments": []
+    },
+    {
+      "title": "Java Script",
+      "author": "w3schools",
+      "url": "https://www.w3schools.com/js/default.asp",
+      "userId": 3,
+      "id": 3,
+      "likes": 9,
+      "comments": [
+        "JavaScript is a good programming language for understanding software logic and the functioning of frameworks and libraries."
+      ]
+    },
+    {
+      "title": "React Native",
+      "author": "University of Helsinki",
+      "url": "https://fullstackopen.com/en/part10",
+      "userId": 3,
+      "id": 4,
+      "likes": 1,
+      "comments": [
+        "React Native framework is a great tool for developing mobile applications."
+      ]
+    }
+  ]
+}
