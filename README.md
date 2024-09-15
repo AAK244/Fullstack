@@ -7,6 +7,6 @@
 
 It can be used to close port 3003 after the `npm test` or `npm run dev` commands.
 
-After the application runs successfully, the codes that return console logs can be deleted. In the following sections, I will delete the codes that display console logs.
+
 
 
