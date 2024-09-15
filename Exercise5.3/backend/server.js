@@ -1,0 +1,101 @@
+import express from 'express';
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
+import bodyParser from 'body-parser';
+import fs from 'fs';
+
+const app = express();
+app.use(bodyParser.json());
+
+const users = [
+  {
+    id: 1,
+    username: 'mluukkai',
+    passwordHash: '$2b$10$7zI9g/KoA3/D8LzI5mGtO.Nd.dUjOlRR1Y.lUHO7F5/yEJZVwoK5O' 
+  }
+];
+
+const SECRET = 'my_secret_key';
+
+const addUser = async (username, password) => {
+  const saltRounds = 10;
+  const passwordHash = await bcrypt.hash(password, saltRounds);
+
+  const newUser = {
+    id: Math.floor(Math.random() * 10000),
+    username,
+    passwordHash,
+  };
+
+  users.push(newUser);
+  return newUser;
+};
+
+const getBlogs = () => {
+  const data = fs.readFileSync('backend/db.json');
+  return JSON.parse(data).blogs;
+};
+
+const saveBlogs = (blogs) => {
+  const data = JSON.stringify({ blogs }, null, 2);
+  fs.writeFileSync('backend/db.json', data);
+};
+
+app.post('/api/login', async (req, res) => {
+  const { username, password } = req.body;
+
+  const user = users.find(u => u.username === username);
+  
+  const passwordCorrect = user === undefined
+    ? false
+    : await bcrypt.compare(password, user.passwordHash);
+
+  if (!(user && passwordCorrect)) {
+    return res.status(401).json({
+      error: 'invalid username or password'
+    });
+  }
+
+  const userForToken = {
+    username: user.username,
+    id: user.id,
+  };
+
+  const token = jwt.sign(userForToken, SECRET);
+
+  res.status(200).send({ token, username: user.username, name: 'Matti Luukkainen' });
+});
+
+app.get('/api/blogs', (req, res) => {
+  const blogs = getBlogs();
+  res.json(blogs);
+});
+
+app.post('/api/blogs', (req, res) => {
+  const body = req.body;
+
+  if (!body.title || !body.author || !body.url) {
+    return res.status(400).json({
+      error: 'title, author, or url missing'
+    });
+  }
+
+  const blogs = getBlogs();
+
+  const blog = {
+    id: Math.floor(Math.random() * 10000),
+    title: body.title,
+    author: body.author,
+    url: body.url,
+  };
+
+  blogs.push(blog);
+  saveBlogs(blogs);
+
+  res.status(201).json(blog);
+});
+
+const PORT = 3003;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

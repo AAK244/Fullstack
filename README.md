@@ -1,0 +1,1 @@
+**In the like test (5.20), the number of likes will be increased by 1. In the delete test (5.21), care will be taken to ensure that the data in db.json is there. Because the delete test deletes that data in the first test. The next test does not work.**
