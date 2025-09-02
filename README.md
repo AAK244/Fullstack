@@ -4,7 +4,7 @@ Welcome to the Fullstack Development Course repository! This repository contains
 
 ## About me
 
-Hello! My name is Abdullah. I am 39 years old, married and have 3 children. 
+Hello! My name is Abdullah. 
 
 ### My Software Development Journey
 
