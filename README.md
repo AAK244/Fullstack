@@ -8,7 +8,7 @@ Hello! My name is Abdullah.
 
 ### My Software Development Journey
 
-I started to be interested in software about 1 year ago. I was interested in software in my spare time from work. After 4-5 months of starting the software, I had to take a break because my workplace was far away and my family members had health problems. I couldn't deal with the software for about 7 months. Now I've started again and I'm thinking of developing software in my free time from work.
+I've been developing software since 2023
 
 Software Technologies I'm Interested In:
 
