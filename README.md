@@ -14,6 +14,7 @@ Software Technologies I'm Interested In:
 
 - **Web Development:** HTML, CSS, JavaScript, React, Next.js, Node.js, Express.js, TypeScript
 - **Unreal Engine:** C++
+- **Godot Engine:** C#
 - **Artificial Intelligence:** Python
 - **Database Management:** MySQL, PostgreSQL, MongoDB
 - **DevOps:** Docker, Kubernetes, CI/CD pipelines
